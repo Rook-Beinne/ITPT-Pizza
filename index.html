@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="Pizzorino" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+        
+        <div width="100%" style="background-color: black; margin-top: -1.5rem; margin-left: -2rem; margin-right: -2rem; height: 6rem;">
+        
+            <h1 style=" color: white; line-height: 6rem;text-align: center;">Pizzerina</h1>
+
+
+        </div>
+
+
+        <h1 align="center">Make your order</h1>
+
+        <form action="mailto: michal.gawronek@gmail.com" method="POST" enctype="text/plain">
+        
+            <fieldset style="margin-top: 2rem; margin-left: 2rem; margin-right: 2rem;">
+                <legend style="font-size: 2rem; text-align: center;">
+                    Pizza options
+                </legend>
+
+                <h2 style="text-align: center;">Size</h2>
+                <div style="text-align: center;">
+                    <input type="radio" name="size" id="30cm" value="30cm">
+                    <label for="30cm">Small 30cm</label>
+                    <input type="radio" name="size" id="40cm" value="40cm">
+                    <label for="40cm">Medium 40cm</label>
+                    <input type="radio" name="size" id="50cm" value="50cm">
+                    <label for="50cm">Large 50cm</label>
+                    <input type="radio" name="size" id="1m" value="1m">
+                    <label for="1m">Amazing Meter wide! &#127829;</label>
+                </div>
+                <br>
+                <h2 style="text-align: center;">Base</h2>
+                <div style="text-align: center;">
+                    <input type="radio" name="base" id="cheese" value="cheese">
+                    <label for="cheese">Cheese tasty</label>
+                    <input type="radio" name="base" id="crusty" value="crusty">
+                    <label for="crusty">Crusty edges</label>
+                    <input type="radio" name="base" id="tomatoe" value="tomatoe">
+                    <label for="tomatoe">Tomatoe filled</label>
+
+                </div>
+                <br>
+                <h2 style="text-align: center;">Vege pizzas</h2>
+                <table align="center">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <input type="radio" name="vege" id="funghi" value="funghi">
+                                <label for="funghi">Funghi (tomato sauce, mushrums, mozzarella)</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="radio" name="vege" value="marge" value="marge">
+                                <label for="marge">Margherita (tomato sauce, mozzarella, touch of parmesano, toped with basil)</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="radio" name="vege" id="diavo" value="diavo">
+                                <label for="diavo">Diavola (tomato sauce, pepperoni, chilli and mozzarella)</label>
+                            </td>
+                        </tr>
+                    </tbody>
+                    
+                </table>
+                <br>
+
+
+                <h2 style="text-align: center;">Meaty feast</h2>
+                <table align="center">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <input type="radio" name="meat" id="bbq" value="bbq">
+                                <label for="bbq">BBQ Americano (smoky bbq sacue, chicken breast, bacon, sweetcorn)</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="radio" name="meat" id="feast" value="feast">
+                                <label for="feast">Meat Feast (pepperoni, ham, beef, chicken, jalapenos, triple cheese blend)</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="radio" name="meat" id="hawai" value="hawai">
+                                <label for="hawai">Hawaiian (ham, pineapple)</label>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+                <br>
+                <h2 style="text-align: center;">Drinks</h2>
+                    <div style="text-align: center;">
+                        <input type="radio" name="drink" id="soda" value="soda">
+                        <label for="soda">Soda</label>
+                        <input type="radio" name="drink" value="water" id="water">
+                        <label for="water">Water</label>
+                        <input type="radio" name="drink" value="beer" id="beer">
+                        <label for="beer">Beer</label>
+                    </div>
+            </fieldset>
+
+            <fieldset style="margin-top: 2rem; margin-left: 2rem; margin-right: 2rem;">
+                
+                <legend style="font-size: 2rem; text-align: center;">
+                    Customer details
+                </legend>
+
+                <table align="center" cellpadding="3rem">
+                    <tbody>
+                        <tr style="text-align: center;" colspan="2">
+                            <td>
+                                <label for="info">All filds required to order</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="firstname">First Name</label> 
+                                <input type="text" name="firstname" placeholder="First Name" required style="text-align: center; float: right; margin-left: 2rem;" size="25">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="lastname">Last Name</label>
+                                <input type="text" name="lastname" id="lastname" placeholder="Last Name" required style="text-align: center; float: right;" size="25">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="email">Email address</label>
+                                <input type="text" name="email" id="email" placeholder="E-mail" required style="text-align: center; float: right;" size="25">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="phone">Phone Number</label>
+                                <input type="text" name="phone" id="phone" placeholder="Phone Number" required style="text-align: center; float: right;" size="25">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="address">Address</label>
+                                <br>
+                                <textarea name="address" id="address" cols="40" rows="5" placeholder="Enter Address" required style="text-align: center; line-height: 2rem;"></textarea>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="deliver">Delivery Time</label>
+                                <select name="delivery" id="delivery" required style="text-align: center; float: right; width:200px;">
+                                    <optgroup label="Eat In">
+                                        <option value="eating in">Eat in</option>
+                                    </optgroup>
+                                    <optgroup label="Take Away">
+                                        <option value="ASAP">ASAP</option>
+                                        <option value="10min">10 min</option>
+                                        <option value="30min">30 min</option>
+                                        <option value="1hr">1 hr</option>
+                                        <option value="Next day">Next Day</option>
+                                    </optgroup>
+                                </select>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </fieldset>
+        
+            <fieldset style="margin-top: 2rem; margin-left: 2rem; margin-right: 2rem;">
+                <legend style="font-size: 2rem; text-align: center;">
+                Payment
+                </legend>
+
+                <table align="center" cellpadding="4rem">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <input type="radio" name="home" id="home">
+                                <label for="home">Pay on arrive</label>
+                            </td>
+                            <td align="center">
+                                <input type="radio" name="card" id="card">
+                                <label for="card">Pay online</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td align="center">
+                                <label for="bank">Bank Details</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <label for="card">Card Number</label>
+                                <input type="text" name="card" id="card" required placeholder="16 digits on the front" style="text-align: center; float: right; margin-left: 1rem;" size="25">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <label for="date">Expiry Date</label>
+                                <input type="text" name="date" placeholder="**/**" required style="text-align: center; float: right; margin-left: 1rem;" size="25">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <label for="security">SCV</label>
+                                <input type="text" name="security" placeholder="***" required style="text-align: center; float: right; margin-left: 1rem;" size="25">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+
+
+            </fieldset>
+
+        </form>
+
+        <br>
+
+        <div align="center">
+            <input type="submit" value="Place your order" style="background-color: black; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-style: bold; color: white; border-radius: 90px 90px 90px 90px; height: 4rem; width: 12rem; font-size: 1.3rem;" >
+        </div>
+        
+        <div width="100%" style="background-color:darkred; margin-bottom: -1.5rem; margin-left: -2rem; margin-right: -2rem; height: 6rem;">
+        
+            <h1 style=" color: white; line-height: 6rem;text-align: center;">Phone us: 07765 88802</h1>
+
+
+        </div>
+    </body>
+</html>
